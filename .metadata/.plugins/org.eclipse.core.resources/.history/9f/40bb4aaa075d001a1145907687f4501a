@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SIT_Regression" verbose="3" parallel="tests"
+	thread-count="10">
+	<listeners>
+		<listener class-name="com.ssp.support.MyTransformer" />
+	</listeners>
+	<parameter name="deviceHost" value="localhost" />
+	<parameter name="devicePort" value="5556" />
+	<parameter name="browserName" value="chrome_windows"></parameter>
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="browser_version" value="52"></parameter>
+	<parameter name="os" value="Windows"></parameter>
+	<parameter name="os_version" value="7"></parameter>
+	<parameter name="env" value="QA"></parameter>
+	<parameter name="featureId" value="SIT_TC_"></parameter>
+	<parameter name="mode" value="Broker"></parameter>
+	<!-- <parameter name="clientName" value="Automation Test Client 1"></parameter>
+	<parameter name="clientCode" value="AUTOMATIONTESTCL"></parameter> -->
+	<parameter name="clientName" value="SSPB"></parameter>
+	<parameter name="clientCode" value="SSPB"></parameter>
+	<parameter name="webSite"
+		value="https://ssppureportal-devt.ssp-development.com/Pure.Portal/LoginPlatform.aspx"></parameter>
+	<test name="SIT_Regression" parallel="methods" thread-count="1">
+		<classes>
+			<class name="com.ssp.regression.insurer.testscripts.SIT_Regression">
+
+				<methods>
+					
+					
+				 	<include name="TC_21453" />
+				 	<!-- 
+					<include name="TC_21454" />
+					<include name="TC_21456" />
+					<include name="TC_21514" />
+					<include name="TC_21558" />
+					<include name="TC_21559" />
+					<include name="TC_21560" />
+					<include name="TC_21676" />
+					<include name="TC_21677" />
+					<include name="TC_21678" />
+					<include name="TC_21680" />
+					<include name="TC_21685" />
+					<include name="TC_21686" />
+					<include name="TC_21687" /> 
+
+			    	 <include name="TC_21538" />
+					<include name="TC_21539" />
+					<include name="TC_21540" />
+					<include name="TC_21691" />
+					<include name="TC_21525" /> 
+					<include name="TC_21556" />
+					<include name="TC_21463" />
+				    <include name="TC_21457" /> 
+					<include name="TC_21458" /> 
+					<include name="TC_21679" />
+					<include name="TC_21531" />
+					<include name="TC_21870" />
+					<include name="TC_21550" />
+					<include name="TC_21553" />
+					<include name="TC_12838" /> 
+					<include name="TC_21538_31879" />
+					<include name="TC_21539_31880" /> 
+					<include name="TC_21540_31881" />
+					<include name="TC_19757_32101" />
+					<include name="TC_32071" /> 
+					<include name="TC_32072" />
+					<include name="TC_32111" />
+					<include name="TC_31996" />
+					<include name="TC_31896" />
+					<include name="TC_31949" />
+					<include name="TC_31998" />
+					<include name="TC_31850" /> 
+
+					//Sunny TC's Starts
+					
+					<include name="TC_21511" />
+					<include name="TC_21512" />
+					<include name="TC_21513" />
+					<include name="TC_21514" />
+					<include name="TC_21508" />
+					<include name="TC_21545" />
+					<include name="TC_21684" />
+					<include name="TC_21683" />
+					<include name="TC_21682" />
+					<include name="TC_21530" />
+					<include name="TC_21449" />
+					<include name="TC_21452" />
+					<include name="TC_21462" />
+					<include name="TC_21461" />
+					<include name="TC_21459" />
+					<include name="TC_31943" />
+					<include name="TC_32001" />
+					<include name="TC_32006" />
+					<include name="TC_31944" />
+					<include name="TC_31993" />
+					<include name="TC_32020" />
+					<include name="TC_32039" />
+					<include name="TC_37874" />
+					
+					//Sunny TC's Ends
+					
+					
+					//bhavesh
+					
+				    <include name="TC_25189_31926" />
+					<include name="TC_21453_31840" />
+					<include name="TC_21456_31843" />
+					<include name="TC_21541_31882" />
+					<include name="TC_21460" />
+					<include name="TC_25240_31970" />
+					<include name="TC_32112" />
+					<include name="TC_32030" />
+					<include name="TC_32102" />
+					<include name="TC_31994" />
+					<include name="TC_31992" />
+					<include name="TC_32027" />
+					<include name="TC_31963" />
+					<include name="TC_37861" />
+					<include name="TC_31856" />
+					<include name="TC_31905" />
+					<include name="TC_37802" />
+					<include name="TC_37890" />
+					<include name="TC_31947" />
+					<include name="TC_21455" />
+ 					
+ 							
+ 					<include name ="TC_21453"/>
+					<include name ="TC_21454"/>
+					<include name ="TC_21456"/>
+					<include name ="TC_21514"/>
+					<include name ="TC_21558"/>
+					<include name ="TC_21559"/>
+					<include name ="TC_21560"/>
+					<include name ="TC_21676"/>
+					<include name ="TC_21677"/>
+					<include name ="TC_21678"/>
+					<include name ="TC_21680"/>
+					<include name ="TC_21685"/>
+					<include name ="TC_21686"/>
+					<include name ="TC_21687"/>
+					
+ 					
+         			<include name= "TC_25252"/>
+					<include name ="TC_25247"/>	
+					<include name= "TC_25248"/>
+					<include name= "TC_25249"/>
+					<include name= "TC_32033"/>
+					<include name= "TC_32032"/> 
+					<include name= "TC_32031"/>
+					<include name= "TC_32035"/>
+					<include name= "TC_37855"/>
+					<include name= "TC_37857"/>
+					<include name= "TC_31899"/>
+					<include name= "TC_31900"/>
+					<include name= "TC_37858"/>
+					<include name= "TC_32052"/>
+					<include name= "TC_32051"/>
+					<include name= "TC_37880"/>
+					<include name= "TC_37816"/>
+					<include name= "TC_37894"/>
+					<include name= "TC_37895"/>
+					<include name= "TC_37855"/>
+					-->
+					
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

@@ -1,0 +1,25 @@
+
+public class PostPreIncrement {
+
+	public static void main(String[] args) {
+		
+		{ 
+	        // integer-type 
+	        System.out.println(10 == 20); 
+	  
+	        // char-type 
+	        System.out.println('a' == 'b'); 
+	  
+	        // char and double type 
+	        System.out.println('a' == 97); 
+	        System.out.println(97.0 == 'a');
+	        
+	  
+	        // boolean type 
+	        System.out.println(true == true); 
+	    } 
+		
+		
+	}
+
+}

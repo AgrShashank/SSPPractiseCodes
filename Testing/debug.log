@@ -1,0 +1,8 @@
+[0508/175524.278:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0516/190910.832:ERROR:process_info.cc(359)] UncheckedAllocate
+[0520/113346.185:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0520/113346.186:ERROR:exception_snapshot_win.cc(98)] thread ID 6284 not found in process
+[0520/113346.194:ERROR:process_info.cc(359)] UncheckedAllocate
+[0520/113346.232:ERROR:process_info.cc(359)] UncheckedAllocate
+[0521/150421.707:ERROR:process_info.cc(359)] UncheckedAllocate
+[0521/150459.221:ERROR:process_info.cc(359)] UncheckedAllocate
